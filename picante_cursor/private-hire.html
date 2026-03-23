@@ -130,116 +130,62 @@
         </div>
       </section>
 
-      <section class="facilities">
-        <h2 class="facilities__title reveal">What’s included</h2>
-        <div class="facilities-grid">
-          <div class="facility reveal">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20 L24 8 L40 20 M12 22v16h24V22" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Wi-Fi</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="40">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="12" width="28" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Projector</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="80">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="32" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Flatscreen TV</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="120">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="14" width="24" height="20" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">PA system &amp; speakers</div>
-          </div>
-          <div class="facility reveal">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36V20l6-8h12l6 8v16" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Air conditioning</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="40">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="10" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Natural light</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="80">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="18" cy="14" r="6" fill="none" stroke="currentColor" stroke-width="2" /><path d="M12 36c0-8 24-8 24 0" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Wheelchair access</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="120">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="10" width="20" height="30" rx="2" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Disabled toilets</div>
-          </div>
-          <div class="facility reveal">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="18" width="32" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Free on-street parking</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="40">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 28c4-10 24-10 28 0" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Play your own music</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="80">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="12" width="28" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">Bring your own DJ</div>
-          </div>
-          <div class="facility reveal" data-reveal-delay="120">
-            <svg class="facility__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20h32v12H8z" fill="none" stroke="currentColor" stroke-width="2" /></svg>
-            <div class="facility__label">No noise restrictions</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="hire-strip" aria-label="Key info">
-        <div class="hire-strip__row">
-          <p class="hire-strip__item">Licence until 2am (extension available)</p>
-          <p class="hire-strip__item">In-house catering only (vegan, veggie, GF, halal, kosher)</p>
-          <p class="hire-strip__item">Available 7 days a week</p>
-        </div>
-      </section>
+      <div class="section-divider" role="presentation" aria-hidden="true"></div>
 
       <section id="hire-form" class="hire-form-section">
-        <div class="hire-form-wrap">
-          <h2 class="h2">Let’s talk</h2>
-          <p class="form-sub">Tell us about your event and we’ll get back to you.</p>
-          <form class="js-validate" novalidate>
+        <div class="hire-form-wrap reveal">
+          <div class="hire-form__intro">
+            <h2 class="h2">Let’s talk</h2>
+            <p class="form-sub">Tell us about your event and our fiesta planners will be in touch within 24 hours.</p>
+          </div>
+          <form class="js-validate hire-form" novalidate>
             <p class="form-status" role="status" aria-live="polite"></p>
-            <div class="form-group">
-              <label class="form-label" for="hire-name">Name</label>
-              <input class="form-field" id="hire-name" name="name" type="text" required autocomplete="name" />
+            <div class="hire-form__grid">
+              <div class="form-group">
+                <label class="form-label" for="hire-name">Name</label>
+                <input class="form-field" id="hire-name" name="name" type="text" required autocomplete="name" placeholder="Juan Gonzalez" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="hire-email">Email</label>
+                <input class="form-field" id="hire-email" name="email" type="email" required autocomplete="email" placeholder="juan@fiesta.com" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="hire-phone">Phone</label>
+                <input class="form-field" id="hire-phone" name="phone" type="tel" autocomplete="tel" placeholder="+44 7000 000 000" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="hire-date">Event date</label>
+                <input class="form-field" id="hire-date" name="date" type="date" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="hire-type">Event type</label>
+                <select class="form-field" id="hire-type" name="type">
+                  <option value="">Birthday party</option>
+                  <option>Wedding celebration</option>
+                  <option>Corporate event</option>
+                  <option>Product launch</option>
+                  <option>Masterclass</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="hire-guests">Estimated guest count</label>
+                <input class="form-field" id="hire-guests" name="guests" type="number" min="1" placeholder="50" />
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="hire-email">Email</label>
-              <input class="form-field" id="hire-email" name="email" type="email" required autocomplete="email" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="hire-phone">Phone</label>
-              <input class="form-field" id="hire-phone" name="phone" type="tel" autocomplete="tel" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="hire-date">Event date</label>
-              <input class="form-field" id="hire-date" name="date" type="date" />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="hire-type">Event type</label>
-              <select class="form-field" id="hire-type" name="type">
-                <option value="">Select…</option>
-                <option>Birthday</option>
-                <option>Wedding</option>
-                <option>Corporate</option>
-                <option>Masterclass</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <fieldset class="form-group form-fieldset">
+            <fieldset class="form-group form-fieldset hire-form__full">
               <legend class="form-label">Which space?</legend>
-              <label class="form-radio-label"><input type="radio" name="space" value="main" /> Main bar</label>
-              <label class="form-radio-label"><input type="radio" name="space" value="terrace" /> Más terrace</label>
-              <label class="form-radio-label"><input type="radio" name="space" value="both" /> Both</label>
+              <div class="hire-form__radios">
+                <label class="form-radio-label"><input type="radio" name="space" value="main" /> Main bar</label>
+                <label class="form-radio-label"><input type="radio" name="space" value="terrace" /> Más terrace</label>
+                <label class="form-radio-label"><input type="radio" name="space" value="full" /> Full venue</label>
+              </div>
             </fieldset>
-            <div class="form-group">
-              <label class="form-label" for="hire-guests">Guest count</label>
-              <input class="form-field" id="hire-guests" name="guests" type="number" min="1" />
+            <div class="form-group hire-form__full">
+              <label class="form-label" for="hire-msg">Tell us more</label>
+              <textarea class="form-field" id="hire-msg" name="message" rows="5" placeholder="Dietary requirements, decoration needs, music preference..."></textarea>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="hire-msg">Message</label>
-              <textarea class="form-field" id="hire-msg" name="message" rows="4"></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary">Send enquiry</button>
+            <button type="submit" class="btn btn--primary hire-form__submit">Send enquiry</button>
           </form>
           <p class="form-alt">Or call <a href="tel:+447502950309">+44 7502 950309</a></p>
         </div>
