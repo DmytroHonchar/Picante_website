@@ -1,0 +1,255 @@
+main.page-hire {
+  padding-top: var(--nav-h-desktop);
+}
+
+@media (max-width: 1023px) {
+  main.page-hire {
+    padding-top: var(--nav-h-mobile);
+  }
+}
+
+.hire-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 24px;
+  overflow: hidden;
+}
+
+.hire-hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hire-hero__bg.hero-kenburns > img {
+  width: 100%;
+  height: 100%;
+}
+
+.hire-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 26, 0.55);
+}
+
+.hire-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hire-hero__inner .h1 {
+  color: var(--warm-white);
+  text-shadow: var(--text-shadow-hero);
+  margin-bottom: 16px;
+}
+
+.hire-hero__sub {
+  color: var(--warm-white);
+  font-size: 18px;
+  margin: 0 0 32px;
+  line-height: 1.55;
+  text-shadow: var(--text-shadow-hero);
+}
+
+.spaces-section {
+  background: var(--warm-white);
+  padding: 100px 24px;
+}
+
+@media (max-width: 767px) {
+  .spaces-section {
+    padding: 72px 20px;
+  }
+}
+
+.spaces-grid {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .spaces-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.space-card .card__body {
+  padding-top: 28px;
+}
+
+.space-card__title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+  letter-spacing: 0.06em;
+}
+
+.space-stats {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 18px;
+}
+
+.space-stat__num {
+  font-family: var(--font-display);
+  font-size: 56px;
+  line-height: 1;
+  color: var(--marigold);
+  letter-spacing: 0.04em;
+}
+
+.space-stat__lbl {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--charcoal);
+}
+
+.space-price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.space-desc {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.facilities {
+  background: var(--pale-blue-grey);
+  padding: 100px 24px;
+}
+
+@media (max-width: 767px) {
+  .facilities {
+    padding: 72px 20px;
+  }
+}
+
+.facilities__title {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4vw, 3rem);
+  color: var(--charcoal);
+  margin-bottom: 48px;
+  letter-spacing: 0.1em;
+}
+
+.facilities-grid {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 24px;
+}
+
+@media (max-width: 900px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.facility {
+  text-align: center;
+}
+
+.facility__icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
+  color: var(--charcoal);
+}
+
+.facility__label {
+  font-size: 13px;
+  color: var(--charcoal);
+  line-height: 1.35;
+}
+
+.hire-strip {
+  background: var(--cantina-blue);
+  padding: 36px 24px;
+}
+
+.hire-strip__row {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+
+.hire-strip__item {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--charcoal);
+  flex: 1;
+  min-width: 220px;
+}
+
+.hire-form-section {
+  background: var(--warm-white);
+  padding: 100px 24px;
+}
+
+@media (max-width: 767px) {
+  .hire-form-section {
+    padding: 72px 20px;
+  }
+}
+
+.hire-form-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hire-form-wrap .h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-sub {
+  text-align: center;
+  font-size: 16px;
+  color: var(--caption);
+  margin: 0 0 40px;
+}
+
+.form-alt {
+  text-align: center;
+  font-size: 14px;
+  color: #888888;
+  margin-top: 28px;
+}
+
+.form-alt a {
+  color: var(--marigold);
+  font-weight: 700;
+}
+
+.form-fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-radio-label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}

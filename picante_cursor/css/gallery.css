@@ -1,0 +1,241 @@
+main.page-gallery {
+  padding-top: var(--nav-h-desktop);
+}
+
+@media (max-width: 1023px) {
+  main.page-gallery {
+    padding-top: var(--nav-h-mobile);
+  }
+}
+
+.gallery-hero {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--charcoal);
+  padding: 48px 24px;
+}
+
+.gallery-hero .h1 {
+  color: var(--warm-white);
+  margin-bottom: 12px;
+}
+
+.gallery-hero__sub {
+  color: var(--caption-dark);
+  font-size: 16px;
+  margin: 0;
+}
+
+.gallery-filters {
+  position: sticky;
+  top: var(--nav-h-desktop);
+  z-index: 50;
+  background: var(--warm-white);
+  padding: 18px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 1023px) {
+  .gallery-filters {
+    top: var(--nav-h-mobile);
+  }
+}
+
+.gallery-filters__row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-pill {
+  flex-shrink: 0;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--charcoal);
+  background: transparent;
+  border: none;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.filter-pill:hover {
+  background: var(--pale-blue-grey);
+}
+
+.filter-pill.is-active {
+  background: var(--marigold);
+  color: var(--charcoal);
+}
+
+.gallery-masonry {
+  background: var(--warm-white);
+  padding: 48px 24px 100px;
+  column-count: 3;
+  column-gap: 12px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .gallery-masonry {
+    column-count: 2;
+  }
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-item--loading {
+  min-height: 160px;
+  background: var(--pale-blue-grey);
+  animation: phPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes phPulse {
+  0%,
+  100% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: filter 280ms ease, transform 280ms ease;
+}
+
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: border-color 280ms ease;
+  z-index: 1;
+}
+
+.gallery-item:hover img {
+  filter: brightness(0.85);
+  transform: scale(1.03);
+}
+
+.gallery-item:hover::after {
+  border-color: var(--cantina-blue);
+}
+
+.gallery-item__expand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 248, 240, 0.92);
+  color: var(--charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 250ms ease;
+  pointer-events: none;
+  font-size: 22px;
+  z-index: 2;
+}
+
+.gallery-item:hover .gallery-item__expand {
+  opacity: 1;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(26, 26, 26, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 280ms ease, visibility 280ms ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  color: var(--warm-white);
+  font-size: 32px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 248, 240, 0.15);
+  color: var(--warm-white);
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 200ms ease;
+}
+
+.lightbox__nav:hover {
+  background: rgba(255, 248, 240, 0.3);
+}
+
+.lightbox__nav--prev {
+  left: 16px;
+}
+
+.lightbox__nav--next {
+  right: 16px;
+}
+
+@media (max-width: 767px) {
+  .lightbox__nav {
+    display: none;
+  }
+}

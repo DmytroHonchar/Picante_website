@@ -1,0 +1,29 @@
+:root {
+  --cantina-blue: #7ec8e3;
+  --fiesta-pink: #f2a7c3;
+  --marigold: #f5a623;
+  --chilli-red: #d94f3b;
+  --charcoal: #1a1a1a;
+  --warm-white: #fff8f0;
+  --pale-blue-grey: #e8f4f8;
+  --lime-green: #7fb069;
+
+  --caption: #666666;
+  --caption-dark: #aaaaaa;
+  --footer-strip: #111111;
+
+  --font-display: "Bebas Neue", "Impact", sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  --nav-h-desktop: 72px;
+  --nav-h-mobile: 60px;
+  --content-max: 1200px;
+  --menu-max: 900px;
+  --intro-max: 1000px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.14);
+  --shadow-primary: 0 4px 12px rgba(245, 166, 35, 0.3);
+  --text-shadow-hero: 0 2px 10px rgba(0, 0, 0, 0.45);
+}

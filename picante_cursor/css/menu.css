@@ -1,0 +1,377 @@
+main.page-menu {
+  padding-top: var(--nav-h-desktop);
+}
+
+@media (max-width: 1023px) {
+  main.page-menu {
+    padding-top: var(--nav-h-mobile);
+  }
+}
+
+.menu-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 24px 48px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .menu-hero {
+    min-height: 40vh;
+  }
+}
+
+.menu-hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.menu-hero__bg.hero-kenburns > img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 26, 26, 0.55) 0%,
+    rgba(26, 26, 26, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.menu-hero__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+}
+
+.menu-hero__inner .h1 {
+  color: var(--warm-white);
+  text-shadow: var(--text-shadow-hero);
+  margin-bottom: 16px;
+}
+
+.menu-hero__sub {
+  color: var(--warm-white);
+  font-size: 18px;
+  text-shadow: var(--text-shadow-hero);
+  margin: 0 0 36px;
+  line-height: 1.55;
+}
+
+.menu-food {
+  background: var(--warm-white);
+  padding: 100px 24px 80px;
+}
+
+@media (max-width: 767px) {
+  .menu-food {
+    padding: 72px 20px 60px;
+  }
+}
+
+.menu-food__inner,
+.menu-drinks__inner {
+  max-width: var(--menu-max);
+  margin: 0 auto;
+}
+
+.menu-category {
+  margin-bottom: 56px;
+}
+
+.menu-category__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.menu-category__head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  color: var(--charcoal);
+  white-space: nowrap;
+  letter-spacing: 0.08em;
+}
+
+.menu-category__line {
+  flex: 1;
+  height: 2px;
+  background: var(--fiesta-pink);
+}
+
+.menu-item {
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px dashed #e0e0e0;
+  position: relative;
+}
+
+.menu-item:hover {
+  box-shadow: inset 3px 0 0 var(--cantina-blue);
+  padding-left: 12px;
+  margin-left: -12px;
+}
+
+@media (max-width: 767px) {
+  .menu-item {
+    border-bottom: none;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .menu-item:hover {
+    padding-left: 0;
+    margin-left: 0;
+    box-shadow: none;
+  }
+}
+
+.menu-item__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.menu-item__name {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  flex: 1;
+  max-width: 80%;
+}
+
+.menu-item__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--marigold);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.menu-item__desc {
+  font-size: 14px;
+  color: var(--caption);
+  margin: 10px 0 10px;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.menu-item__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.staff-pick {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--chilli-red);
+  border: 2px solid var(--chilli-red);
+  padding: 2px 8px;
+  border-radius: 2px;
+  transform: rotate(-8deg);
+  display: inline-block;
+}
+
+.tag-promo {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--chilli-red);
+  text-transform: uppercase;
+}
+
+.tag-nohh {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--chilli-red);
+  text-transform: uppercase;
+}
+
+.tag-bargain {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--lime-green);
+  text-transform: uppercase;
+}
+
+.familia-card {
+  background: var(--pale-blue-grey);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 8px;
+}
+
+.familia-card .menu-item {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.badge-serves {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: var(--cantina-blue);
+  color: var(--warm-white);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dietary-key {
+  background: var(--pale-blue-grey);
+  padding: 22px 24px;
+  margin-top: 48px;
+  border-radius: 8px;
+}
+
+.dietary-key p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--charcoal);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.dietary-key .badge-letter {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--charcoal);
+  color: var(--warm-white);
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-drinks {
+  background: var(--charcoal);
+  color: var(--warm-white);
+  padding: 100px 24px 100px;
+}
+
+@media (max-width: 767px) {
+  .menu-drinks {
+    padding: 72px 20px 80px;
+  }
+}
+
+.menu-drinks .menu-category__head h2 {
+  color: var(--warm-white);
+}
+
+.menu-drinks .menu-item {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.menu-drinks .menu-item__name {
+  color: var(--warm-white);
+}
+
+.menu-drinks .menu-item__desc {
+  color: var(--caption-dark);
+  font-style: italic;
+}
+
+.menu-drinks .menu-item:hover {
+  box-shadow: inset 3px 0 0 var(--cantina-blue);
+}
+
+.menu-drinks .staff-pick {
+  color: var(--fiesta-pink);
+  border-color: var(--fiesta-pink);
+}
+
+.drinks-banner {
+  background: var(--cantina-blue);
+  color: var(--charcoal);
+  text-align: center;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 0.08em;
+}
+
+.beer-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 36px;
+}
+
+.beer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.beer-table th,
+.beer-table td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+.beer-table thead th {
+  background: #2a2a2a;
+  color: var(--warm-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+}
+
+.beer-table tbody tr:nth-child(odd) {
+  background: #222222;
+}
+
+.beer-table tbody tr:nth-child(even) {
+  background: var(--charcoal);
+}
+
+.bottles-list,
+.spirits-line {
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--warm-white);
+  margin-bottom: 28px;
+}
+
+.wine-table {
+  width: 100%;
+  max-width: 480px;
+  border-collapse: collapse;
+  margin-bottom: 28px;
+}
+
+.wine-table th,
+.wine-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wine-table th {
+  text-align: left;
+  color: var(--caption-dark);
+  font-size: 12px;
+  text-transform: uppercase;
+}
