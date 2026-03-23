@@ -352,6 +352,7 @@
 .site-footer {
   background: var(--charcoal);
   color: var(--warm-white);
+  font-size: 15px;
 }
 
 .site-footer__grid {
@@ -372,7 +373,7 @@
 
 .site-footer__brand {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: 0.12em;
   color: var(--warm-white);
   display: block;
@@ -381,20 +382,20 @@
 }
 
 .site-footer__season {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--fiesta-pink);
   margin: 0 0 10px;
 }
 
 .site-footer__walkins {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--warm-white);
   margin: 0 0 12px;
   line-height: 1.5;
 }
 
 .site-footer__ig {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--marigold);
 }
@@ -404,7 +405,7 @@
 }
 
 .site-footer__col-label {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -423,7 +424,7 @@
 }
 
 .site-footer__links a {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--warm-white);
   transition: color 200ms ease;
 }
@@ -435,7 +436,7 @@
 .site-footer__phone {
   display: inline-block;
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--marigold);
 }
@@ -444,7 +445,7 @@
   background: var(--footer-strip);
   padding: 16px 24px;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--warm-white);
 }
 
@@ -517,6 +518,10 @@
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.drinks-banner.reveal.is-visible {
+  transform: rotate(-1.5deg);
 }
 
 .page-loader {
