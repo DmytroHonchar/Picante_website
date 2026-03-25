@@ -48,8 +48,9 @@ main.page-gallery {
 
 @media (max-width: 767px) {
   .gallery-masonry {
-    column-gap: 8px;
-    padding: 24px 16px 48px;
+    column-count: 1;
+    column-gap: 0;
+    padding: 16px 16px 48px;
   }
 }
 

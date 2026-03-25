@@ -80,6 +80,11 @@ main.page-hire {
   }
 }
 
+.space-card .card__media img {
+  height: 320px;
+  object-fit: cover;
+}
+
 .space-card .card__body {
   padding-top: 28px;
 }
