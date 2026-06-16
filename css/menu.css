@@ -22,12 +22,12 @@ main.page-menu {
   z-index: 3;
   background-image: repeating-linear-gradient(
     45deg,
-    var(--chilli-red) 0,
-    var(--chilli-red) 10px,
-    var(--marigold) 10px,
-    var(--marigold) 20px,
-    var(--cantina-blue) 20px,
-    var(--cantina-blue) 30px
+    var(--terracotta) 0,
+    var(--terracotta) 10px,
+    var(--brass) 10px,
+    var(--brass) 20px,
+    var(--sage) 20px,
+    var(--sage) 30px
   );
 }
 
@@ -84,14 +84,14 @@ main.page-menu {
 }
 
 .menu-hero__inner .h1 {
-  color: var(--warm-white);
+  color: var(--linen);
   text-shadow: var(--text-shadow-hero);
   margin-bottom: 12px;
   font-size: clamp(2rem, 5vw, 3.5rem);
 }
 
 .menu-hero__sub {
-  color: var(--warm-white);
+  color: var(--linen);
   font-size: 15px;
   text-shadow: var(--text-shadow-hero);
   margin: 0 0 28px;
@@ -113,7 +113,7 @@ main.page-menu {
    FOOD SECTION
    ====================================================== */
 .menu-food {
-  background: var(--warm-white);
+  background: var(--linen);
   padding: 48px 32px 48px;
 }
 
@@ -228,7 +228,7 @@ main.page-menu {
 
 /* QR Card */
 .qr-card {
-  background: var(--warm-white);
+  background: var(--linen);
   border-radius: 12px;
   padding: 1.5rem;
   display: flex;
@@ -244,7 +244,7 @@ main.page-menu {
 .qr-card__icon {
   width: 56px;
   height: 56px;
-  background: var(--marigold);
+  background: var(--brass);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -285,7 +285,7 @@ main.page-menu {
 .menu-category__head h2 {
   font-family: var(--font-display);
   font-size: clamp(2.25rem, 6vw, 3.25rem);
-  color: var(--chilli-red);
+  color: var(--terracotta);
   letter-spacing: 0.04em;
   line-height: 1.0;
   display: block;
@@ -296,13 +296,13 @@ main.page-menu {
 .menu-category--sub .menu-category__head h2 {
   font-size: clamp(1.4rem, 3.5vw, 1.9rem);
   color: var(--charcoal);
-  border-bottom: 4px solid var(--marigold);
+  border-bottom: 4px solid var(--brass);
   padding-bottom: 6px;
   display: inline-block;
 }
 
 /* Tacos & Burritos side-by-side */
-.tacos-burritos-grid {
+.plates-mains-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
@@ -310,12 +310,12 @@ main.page-menu {
 }
 
 @media (max-width: 640px) {
-  .tacos-burritos-grid {
+  .plates-mains-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.tacos-burritos-grid .menu-category {
+.plates-mains-grid .menu-category {
   margin-bottom: 0;
 }
 
@@ -398,7 +398,7 @@ main.page-menu {
 
 @media (min-width: 768px) {
   .menu-item:hover .menu-item__name {
-    color: var(--chilli-red);
+    color: var(--terracotta);
   }
 }
 
@@ -406,7 +406,7 @@ main.page-menu {
   font-family: var(--font-display);
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
   font-weight: 400;
-  color: var(--marigold);
+  color: var(--brass);
   text-align: right;
   flex-shrink: 0;
   letter-spacing: 0.04em;
@@ -440,8 +440,8 @@ main.page-menu {
   text-transform: uppercase;
   letter-spacing: 0.13em;
   line-height: 1;
-  color: var(--warm-white);
-  background: var(--chilli-red);
+  color: var(--linen);
+  background: var(--terracotta);
   border: 1px solid rgba(26, 26, 26, 0.08);
   border-radius: 999px 3px 3px 999px;
   box-shadow: 0 4px 10px rgba(170, 45, 29, 0.14);
@@ -490,7 +490,7 @@ main.page-menu {
 .tag-promo {
   font-size: 11px;
   font-weight: 700;
-  color: var(--chilli-red);
+  color: var(--terracotta);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -498,7 +498,7 @@ main.page-menu {
 .tag-nohh {
   font-size: 10px;
   font-weight: 700;
-  color: var(--chilli-red);
+  color: var(--terracotta);
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -506,7 +506,7 @@ main.page-menu {
 .tag-bargain {
   font-size: 10px;
   font-weight: 700;
-  background: var(--lime-green);
+  background: var(--herb);
   color: #fff;
   padding: 2px 8px;
   border-radius: 999px;
@@ -518,7 +518,7 @@ main.page-menu {
 .tag-af {
   font-size: 10px;
   font-weight: 700;
-  background: var(--cantina-blue);
+  background: var(--sage);
   color: var(--charcoal);
   padding: 2px 8px;
   border-radius: 4px;
@@ -590,7 +590,7 @@ main.page-menu {
    ALLERGEN STRIP
    ====================================================== */
 .dietary-key {
-  background: var(--pale-blue-grey);
+  background: var(--mist);
   padding: 12px 24px;
   border-radius: 999px;
   display: flex;
@@ -628,8 +628,8 @@ main.page-menu {
 }
 
 .dietary-dot--ve { background: #2d7a3a; }
-.dietary-dot--gf { background: var(--cantina-blue); }
-.dietary-dot--v  { background: var(--chilli-red); }
+.dietary-dot--gf { background: var(--sage); }
+.dietary-dot--v  { background: var(--terracotta); }
 
 .dietary-key__note {
   font-size: 13px;
@@ -643,7 +643,7 @@ main.page-menu {
    ====================================================== */
 .menu-drinks {
   background: var(--charcoal);
-  color: var(--warm-white);
+  color: var(--linen);
   padding: 48px 32px 48px;
 }
 
@@ -660,7 +660,7 @@ main.page-menu {
 
 /* Tilted pricing banner */
 .drinks-banner {
-  background: var(--cantina-blue);
+  background: var(--sage);
   color: var(--charcoal);
   display: flex;
   align-items: center;
@@ -714,7 +714,7 @@ main.page-menu {
 
 /* Drink category overrides */
 .menu-drinks .menu-category__head h2 {
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 /* Cocktails heading with icon */
@@ -730,7 +730,7 @@ main.page-menu {
 }
 
 .drinks-cat__icon {
-  color: var(--marigold);
+  color: var(--brass);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -746,7 +746,7 @@ main.page-menu {
 
 .menu-category--beer .menu-category__head h2 {
   font-size: clamp(2.25rem, 6vw, 3.25rem);
-  color: var(--warm-white);
+  color: var(--linen);
   border-bottom: none;
   padding-bottom: 0;
   display: block;
@@ -760,14 +760,14 @@ main.page-menu {
 
 /* Secondary drink categories: white headings */
 .menu-drinks .menu-category--sub .menu-category__head h2 {
-  color: var(--warm-white);
+  color: var(--linen);
   border-bottom: none;
   padding-bottom: 0;
 }
 
 /* Alcohol-free heading keeps the blue accent */
 .drinks-box--na .drinks-na__title {
-  color: var(--cantina-blue);
+  color: var(--sage);
 }
 
 /* Non-alcoholic box: heading inside */
@@ -779,14 +779,14 @@ main.page-menu {
   font-family: var(--font-display);
   font-size: clamp(0.85rem, 2vw, 1rem);
   letter-spacing: 0.12em;
-  color: var(--cantina-blue);
+  color: var(--sage);
   text-transform: uppercase;
   margin: 0 0 1.25rem;
   line-height: 1;
 }
 
 .menu-drinks .menu-item__name {
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 .menu-drinks .menu-item__desc {
@@ -796,19 +796,19 @@ main.page-menu {
 
 @media (min-width: 768px) {
   .menu-drinks .menu-item:hover .menu-item__name {
-    color: var(--cantina-blue);
+    color: var(--sage);
   }
 }
 
 .menu-drinks .staff-pick {
   color: var(--charcoal);
-  background: var(--fiesta-pink);
+  background: var(--rose);
   box-shadow: 0 4px 10px rgba(240, 91, 140, 0.16);
 }
 
 /* Featured cocktail (left border accent) */
 .menu-item--featured {
-  border-left: 4px solid var(--chilli-red);
+  border-left: 4px solid var(--terracotta);
   padding-left: 1rem;
 }
 
@@ -875,7 +875,7 @@ main.page-menu {
 
 .beer-table tbody td {
   font-size: 14px;
-  color: var(--warm-white);
+  color: var(--linen);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
@@ -889,7 +889,7 @@ main.page-menu {
 .beer-table tbody td:not(:first-child) {
   font-family: var(--font-display);
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
-  color: var(--marigold);
+  color: var(--brass);
   font-weight: 400;
   letter-spacing: 0.04em;
 }
@@ -911,11 +911,11 @@ main.page-menu {
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 .beer-special__price {
-  color: var(--marigold);
+  color: var(--brass);
   font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
@@ -988,13 +988,13 @@ main.page-menu {
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 .wine-table tbody td:not(:first-child) {
   font-family: var(--font-display);
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
-  color: var(--marigold);
+  color: var(--brass);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-align: right;
@@ -1005,7 +1005,7 @@ main.page-menu {
 .spirits-line {
   font-size: 14px;
   line-height: 1.9;
-  color: var(--warm-white);
+  color: var(--linen);
   margin-bottom: 0;
 }
 
@@ -1037,11 +1037,11 @@ main.page-menu {
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 .drinks-list__price {
-  color: var(--marigold);
+  color: var(--brass);
   font-family: var(--font-display);
   font-weight: 400;
   font-size: clamp(1.05rem, 2.5vw, 1.3rem);

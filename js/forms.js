@@ -25,14 +25,14 @@
       if (!ok) {
         if (status) {
           status.textContent = "Please fill in the required fields.";
-          status.style.color = "var(--chilli-red)";
+          status.style.color = "var(--terracotta)";
         }
         return;
       }
 
       if (status) {
         status.textContent = "Thanks — we’ll be in touch.";
-        status.style.color = "var(--lime-green)";
+        status.style.color = "var(--herb)";
       }
       form.reset();
     });

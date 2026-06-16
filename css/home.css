@@ -67,7 +67,7 @@ main.home .btn {
   font-family: var(--font-display);
   font-size: clamp(2.35rem, 6.5vw, 4.25rem);
   letter-spacing: 0.16em;
-  color: var(--warm-white);
+  color: var(--linen);
   text-shadow: var(--text-shadow-hero);
   margin-bottom: 12px;
   line-height: 0.95;
@@ -76,7 +76,7 @@ main.home .btn {
 
 .hero-home__tagline {
   font-size: clamp(15px, 1.75vw, 17px);
-  color: var(--warm-white);
+  color: var(--linen);
   text-shadow: var(--text-shadow-hero);
   margin: 0 0 24px;
   line-height: 1.5;
@@ -114,7 +114,7 @@ main.home .btn {
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
-  color: var(--warm-white);
+  color: var(--linen);
   opacity: 0.5;
   animation: chevronBounce 1.5s ease-in-out infinite;
   transition: opacity 300ms ease;
@@ -137,10 +137,10 @@ main.home .btn {
 
 /* Info strip */
 .info-strip {
-  background: var(--cantina-blue);
+  background: var(--sage);
   padding: 14px 28px;
-  border-top: 2px solid var(--fiesta-pink);
-  border-bottom: 2px solid var(--fiesta-pink);
+  border-top: 2px solid var(--rose);
+  border-bottom: 2px solid var(--rose);
 }
 
 .info-strip__row {
@@ -178,7 +178,7 @@ main.home .btn {
 
 /* Intro */
 .intro-section {
-  background: var(--warm-white);
+  background: var(--linen);
   padding: 72px 24px;
 }
 
@@ -208,7 +208,7 @@ main.home .btn {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--fiesta-pink);
+  color: var(--rose);
   margin-bottom: 10px;
 }
 
@@ -257,7 +257,7 @@ main.home .btn {
   position: absolute;
   inset: 16px;
   border-radius: 14px;
-  border: 2px solid var(--marigold);
+  border: 2px solid var(--brass);
   opacity: 0.55;
   z-index: 0;
   pointer-events: none;
@@ -270,7 +270,7 @@ main.home .btn {
   position: absolute;
   inset: -2px;
   border-radius: 14px;
-  border: 2px solid var(--fiesta-pink);
+  border: 2px solid var(--rose);
   opacity: 0.7;
   pointer-events: none;
   transform: rotate(-3.5deg);
@@ -318,7 +318,7 @@ main.home .btn {
 
 /* Highlights — wave layout, portrait cards */
 .highlights {
-  background: var(--pale-blue-grey);
+  background: var(--mist);
   padding: 72px 24px;
 }
 
@@ -374,7 +374,7 @@ main.home .btn {
 }
 
 .highlight-card {
-  background: var(--warm-white);
+  background: var(--linen);
   border-radius: 12px;
   box-shadow: var(--shadow-card);
   overflow: hidden;
@@ -418,7 +418,7 @@ main.home .btn {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--fiesta-pink);
+  color: var(--rose);
   margin-bottom: 8px;
 }
 
@@ -444,7 +444,7 @@ main.home .btn {
 .highlight-card__link {
   font-size: 13px;
   font-weight: 700;
-  color: var(--marigold);
+  color: var(--brass);
 }
 
 .highlight-card__accent {
@@ -452,16 +452,16 @@ main.home .btn {
   margin-top: 16px;
 }
 
-.highlight-card__accent--chilli {
-  background: var(--chilli-red);
+.highlight-card__accent--terracotta {
+  background: var(--terracotta);
 }
 
-.highlight-card__accent--marigold {
-  background: var(--marigold);
+.highlight-card__accent--brass {
+  background: var(--brass);
 }
 
 .highlight-card__accent--blue {
-  background: var(--cantina-blue);
+  background: var(--sage);
 }
 
 /* Instagram */
@@ -482,7 +482,7 @@ main.home .btn {
 }
 
 .ig-block__head .h2 {
-  color: var(--warm-white);
+  color: var(--linen);
   margin-bottom: 8px;
   letter-spacing: 0.1em;
   font-size: clamp(1.5rem, 3.25vw, 2.35rem);
@@ -491,7 +491,7 @@ main.home .btn {
 .ig-block__handle {
   font-size: 15px;
   font-weight: 700;
-  color: var(--marigold);
+  color: var(--brass);
 }
 
 .ig-block__handle:hover {
@@ -548,7 +548,7 @@ main.home .btn {
 }
 
 .ig-tile:hover {
-  outline-color: var(--cantina-blue);
+  outline-color: var(--sage);
 }
 
 .ig-tile:hover img {

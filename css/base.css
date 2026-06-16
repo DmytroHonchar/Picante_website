@@ -14,7 +14,7 @@ body {
   font-size: 17px;
   line-height: 1.65;
   color: var(--charcoal);
-  background-color: var(--warm-white);
+  background-color: var(--linen);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,29 +50,45 @@ h3,
 .h2,
 .h3 {
   font-family: var(--font-display);
-  font-weight: 400;
-  line-height: 1.02;
+  font-weight: 700;
+  line-height: 1.06;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
-/* Dramatic scale vs 16–17px body */
 h1,
 .h1 {
-  font-size: clamp(2.5rem, 6vw, 6rem);
-  letter-spacing: 0.18em;
+  font-size: 5rem;
+  letter-spacing: 0;
 }
 
 h2,
 .h2 {
-  font-size: clamp(1.75rem, 3.8vw, 3.5rem);
-  letter-spacing: 0.12em;
+  font-size: 3rem;
+  letter-spacing: 0;
 }
 
 h3,
 .h3 {
-  font-size: clamp(1.375rem, 2.2vw, 2rem);
-  letter-spacing: 0.08em;
+  font-size: 1.75rem;
+  letter-spacing: 0;
+}
+
+@media (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.1rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.45rem;
+  }
 }
 
 .on-dark h1,
@@ -81,7 +97,7 @@ h3,
 .on-dark .h1,
 .on-dark .h2,
 .on-dark .h3 {
-  color: var(--warm-white);
+  color: var(--linen);
   text-shadow: var(--text-shadow-hero);
 }
 

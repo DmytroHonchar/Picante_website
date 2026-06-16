@@ -13,7 +13,7 @@ main.page-contact {
 .map-hero {
   position: relative;
   min-height: 50vh;
-  background: var(--pale-blue-grey);
+  background: var(--mist);
 }
 
 @media (max-width: 767px) {
@@ -36,12 +36,12 @@ main.page-contact {
   bottom: 36px;
   transform: translateX(-50%);
   width: min(440px, calc(100% - 32px));
-  background: var(--warm-white);
+  background: var(--linen);
   border-radius: 16px;
   padding: 36px 32px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
   z-index: 2;
-  border-top: 4px solid var(--marigold);
+  border-top: 4px solid var(--brass);
 }
 
 @media (max-width: 767px) {
@@ -53,7 +53,7 @@ main.page-contact {
     width: 100%;
     border-radius: 0;
     margin-top: -20px;
-    border-top: 4px solid var(--marigold);
+    border-top: 4px solid var(--brass);
   }
 }
 
@@ -72,12 +72,12 @@ main.page-contact {
 }
 
 .map-hero__phone {
-  color: var(--marigold);
+  color: var(--brass);
   font-weight: 700;
 }
 
 .map-hero__ig {
-  color: var(--cantina-blue);
+  color: var(--sage);
   font-weight: 700;
 }
 
@@ -91,7 +91,7 @@ main.page-contact {
   background:
     radial-gradient(ellipse at top right, rgba(245, 166, 35, 0.08), transparent 50%),
     radial-gradient(ellipse at bottom left, rgba(126, 200, 227, 0.1), transparent 50%),
-    var(--warm-white);
+    var(--linen);
   padding: 100px 24px;
 }
 
@@ -126,7 +126,7 @@ main.page-contact {
 
 .hours-sub {
   font-size: 14px;
-  color: var(--fiesta-pink);
+  color: var(--rose);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -148,7 +148,7 @@ main.page-contact {
 }
 
 .hours-table tr:nth-child(even) td {
-  background: var(--pale-blue-grey);
+  background: var(--mist);
 }
 
 .hours-table tr {
@@ -169,7 +169,7 @@ main.page-contact {
 }
 
 .text-closed {
-  color: var(--chilli-red);
+  color: var(--terracotta);
   font-weight: 700;
 }
 
@@ -202,7 +202,7 @@ main.page-contact {
 }
 
 .icon-sketch {
-  color: var(--cantina-blue);
+  color: var(--sage);
   flex-shrink: 0;
 }
 
@@ -213,14 +213,14 @@ main.page-contact {
   color: var(--charcoal);
   line-height: 1.5;
   padding-left: 16px;
-  border-left: 3px solid var(--marigold);
+  border-left: 3px solid var(--brass);
 }
 
 /* ── Contact form ── */
 
 .contact-form-section {
   background: var(--charcoal);
-  color: var(--warm-white);
+  color: var(--linen);
   padding: 100px 24px;
 }
 
@@ -238,7 +238,7 @@ main.page-contact {
 .contact-form-wrap .h2 {
   text-align: center;
   margin-bottom: 12px;
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 .contact-form-wrap .form-sub {
@@ -247,14 +247,14 @@ main.page-contact {
 }
 
 .contact-form-wrap .form-label {
-  color: var(--warm-white);
+  color: var(--linen);
 }
 
 .contact-form-wrap .form-field {
   border: none;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.1);
-  color: var(--warm-white);
+  color: var(--linen);
   box-shadow: none;
   padding: 15px 16px;
 }
@@ -281,6 +281,6 @@ main.page-contact {
 }
 
 .contact-ig-note a {
-  color: var(--marigold);
+  color: var(--brass);
   font-weight: 700;
 }
